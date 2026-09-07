@@ -1,0 +1,21 @@
+Demo credentials for peer review
+================================
+
+Admin / superuser
+Username: admin
+Password: AdminPass123!
+
+Manager
+Username: manager
+Password: ManagerPass123!
+
+Delivery crew
+Username: delivery
+Password: DeliveryPass123!
+
+Customer
+Username: customer
+Password: CustomerPass123!
+
+These accounts are demonstration-only and must not be reused elsewhere.
+Tokens can be obtained by POSTing the username and password to /auth/token/login/.

@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+.verify-packages/
+.test-deps/
+.pytest_cache/
+.idea/
+.vscode/
+.DS_Store
