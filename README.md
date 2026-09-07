@@ -15,7 +15,7 @@ $env:MYSQL_PASSWORD="your password"
 ## Run the project
 
 ```text
-cd littlelemon
+cd little-lemon-backend-capstone
 pipenv install
 pipenv shell
 python manage.py makemigrations

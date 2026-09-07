@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Book | Little Lemon{% endblock %}
+{% block content %}
+<section class="page-card">
+    <p class="eyebrow">Reservations</p>
+    <h1>Make a reservation</h1>
+    <div class="booking-grid">
+        <form id="booking-form" method="post">
+            {% csrf_token %}
+            <label for="id_first_name">First name</label>
+            {{ form.first_name }}
+            <label for="id_reservation_date">Reservation date</label>
+            {{ form.reservation_date }}
+            <label for="id_reservation_slot">Reservation slot</label>
+            {{ form.reservation_slot }}
+            <button type="submit">Reserve</button>
+            <p id="form-message" class="message" role="status"></p>
+        </form>
+        <section aria-live="polite">
+            <h2 id="booking-heading">Bookings</h2>
+            <div id="bookings-list"><p>Loading bookings…</p></div>
+        </section>
+    </div>
+</section>
+{% endblock %}
+{% block scripts %}<script src="{% static 'restaurant/js/booking.js' %}"></script>{% endblock %}

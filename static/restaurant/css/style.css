@@ -1,0 +1,30 @@
+:root { --green:#3f5d52; --yellow:#f4ce14; --ink:#24342e; --paper:#f7f8f5; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:#fff; font:16px/1.5 Arial,sans-serif; }
+header, main, footer { width:min(960px, calc(100% - 32px)); margin:auto; }
+header { padding-top:28px; }
+.brand img { display:block; width:270px; max-width:75%; margin:0 auto 22px; }
+nav { display:flex; flex-wrap:wrap; justify-content:center; gap:0; background:var(--green); }
+nav a { color:#fff; padding:10px 16px; text-decoration:none; font-weight:700; }
+nav a:hover, nav a:focus { color:var(--yellow); }
+main { min-height:480px; }
+h1, h2 { font-family:Georgia,serif; line-height:1.1; }
+h1 { font-size:clamp(2.2rem, 6vw, 4rem); margin:.15em 0 .35em; }
+.eyebrow { color:#687b72; font-weight:800; letter-spacing:.15em; text-transform:uppercase; }
+.hero, .page-card { margin:22px 0; padding:clamp(24px,5vw,56px); border:1px solid #e3e8e4; background:var(--paper); }
+.hero { min-height:420px; display:grid; align-items:center; background:linear-gradient(120deg,#eef2ed 0%,#fff8d5 100%); }
+.hero > div { max-width:590px; }
+.button, button { display:inline-block; border:0; border-radius:4px; padding:11px 22px; color:#fff; background:var(--green); font-weight:700; text-decoration:none; cursor:pointer; }
+.button:hover, button:hover { background:#2e493f; }
+.booking-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:56px; }
+form { display:grid; gap:8px; align-content:start; }
+label { margin-top:8px; font-weight:700; }
+input, select { width:100%; padding:10px; border:1px solid #aab5af; border-radius:3px; background:#fff; }
+select option:disabled { color:#777; background:#ddd; }
+form button { margin-top:12px; }
+.message { min-height:24px; font-weight:700; }
+.menu-list article { display:flex; justify-content:space-between; gap:24px; border-bottom:1px solid #ced6d1; }
+pre { max-height:520px; overflow:auto; padding:18px; color:#e9fff3; background:#20332c; border-radius:4px; }
+footer { display:flex; align-items:center; justify-content:space-between; margin-bottom:30px; padding:18px 8px; border-top:2px solid #9ba9a2; background:#eef2ef; }
+footer img { width:42px; height:52px; }
+@media (max-width:650px) { .booking-grid { grid-template-columns:1fr; gap:28px; } nav a { padding:9px 10px; } }

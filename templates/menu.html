@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Menu | Little Lemon{% endblock %}
+{% block content %}
+<section class="page-card">
+    <p class="eyebrow">Fresh every day</p>
+    <h1>Menu</h1>
+    <div class="menu-list">
+        {% for item in menu %}
+            <article><div><h2>{{ item.name }}</h2><p>{{ item.menu_item_description }}</p></div><strong>${{ item.price }}</strong></article>
+        {% empty %}
+            <p>No menu items have been added yet.</p>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Reservations | Little Lemon{% endblock %}
+{% block content %}
+<section class="page-card">
+    <p class="eyebrow">Booking data</p>
+    <h1>All Reservations</h1>
+    <p>The current bookings are retrieved from the bookings API.</p>
+    <pre id="reservations-json">Loading reservations…</pre>
+</section>
+{% endblock %}
+{% block scripts %}<script src="{% static 'restaurant/js/reservations.js' %}"></script>{% endblock %}
